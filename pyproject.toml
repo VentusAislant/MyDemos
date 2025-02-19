@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aislant"
+version = "0.1.0"
+description = "Ventus Aislant's Demos (for learning and fun)"
+readme = "README.md"
+authors = [
+    {name = "Ventus Aislant (张浩杰)", email = "z18435601425@gmail.com"}
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Ubuntu",
+]
+
+dependencies = [
+    "numpy==1.26.0",
+    "notebook==7.2.2",
+]
+
+[project.optional-dependencies]
+ai = [
+
+]
+
+llm_demos = [
+
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AislantVentus/mydemos"
+
+[tool.setuptools.packages.find]
+exclude = ["playground*", "pretrained_models*", "dataset*", "scripts*"]
+
+[tool.wheel]
+exclude = ["playground*", "pretrained_models*", "dataset*", "scripts*"]
