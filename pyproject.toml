@@ -3,12 +3,12 @@ requires = ["setuptools>=64", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "aislant"
+name = "aislant_demos"
 version = "0.1.0"
 description = "Ventus Aislant's Demos (for learning and fun)"
 readme = "README.md"
 authors = [
-    {name = "Ventus Aislant (张浩杰)", email = "z18435601425@gmail.com"}
+    { name = "Ventus Aislant (张浩杰)", email = "z18435601425@gmail.com" }
 ]
 requires-python = ">=3.10"
 classifiers = [
@@ -21,22 +21,37 @@ classifiers = [
 dependencies = [
     "numpy==1.26.0",
     "notebook==7.2.2",
+    "pyyaml",
+    "torch", "torchvision"
 ]
 
 [project.optional-dependencies]
-ai = [
-
+llm_demos = [
+    "transformers==4.49.0",
+    "accelerate==0.26.0"
 ]
 
-llm_demos = [
+gradio_demos = [
+    "gradio"
+]
 
+scapy_demos = [
+    "spacy==3.8.4"
+]
+
+attn_map_demos = [
+    "transformers==4.49.0",
+    "seaborn==0.13.2",
+    "matplotlib==3.10.0",
+    "scikit-image==0.25.2",
+    "opencv-python==4.11.0.86"
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/AislantVentus/mydemos"
+"Homepage" = "https://github.com/AislantVentus/MyDemos"
 
 [tool.setuptools.packages.find]
-exclude = ["playground*", "pretrained_models*", "dataset*", "scripts*"]
+exclude = ["playground*", "pretrained_models*", "dataset*"]
 
 [tool.wheel]
-exclude = ["playground*", "pretrained_models*", "dataset*", "scripts*"]
+exclude = ["playground*", "pretrained_models*", "dataset*"]

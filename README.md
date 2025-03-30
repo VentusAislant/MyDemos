@@ -1,20 +1,24 @@
 ### Install
 
-- 1. Create Virtual Environment:
+1. Create Virtual Environment:
 ```shell
-conda create -n aislant python=3.10 -y
-conda activate aislant
+conda create -n aislant_demos python=3.10 -y
+conda activate aislant_demos
 
 ```
 
-- 2. Install packages
+2. Install packages
 ```shell
 # for all(general)
 pip install -e .
 
-# for ai(only for this module)
-pip install -e .[ai]
+# for llm demos
+pip install -e .[llm_demos]
 
-# for various_tools(only for this module)
-pip install -e .[visual_tools]
+# for gradio demos
+pip install -e .[gradio_demos]
+
+# for vision demos
+pip install -e .[vision_demos]
+
 ```

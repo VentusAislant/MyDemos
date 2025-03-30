@@ -1,0 +1,8 @@
+qwen:
+  qwen2.5_1.5b: "pretrained_models/Qwen/Qwen2.5-1.5B"
+  qwen2.5_1.5b_instruct: "pretrained_models/Qwen/Qwen2.5-1.5B-Instruct"
+  qwen2.5_3b_instruct: "pretrained_models/Qwen/Qwen2.5-3B-Instruct"
+  qwen2.5_7b_instruct: "pretrained_models/Qwen/Qwen2.5-7B-Instruct"
+  qwen2.5_14b_instruct: "pretrained_models/Qwen/Qwen2.5-14B-Instruct"
+tinyllama:
+  tinyllama_1.1b_chat: "pretrained_models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"
